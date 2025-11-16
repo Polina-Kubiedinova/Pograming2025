@@ -19,7 +19,7 @@ pipeline {
          agent any
          steps{
             bat 'pip install unittest-xml-reporting'
-            bat 'python3 test.py'
+            bat 'python test.py'
          }
          post{
             always {
