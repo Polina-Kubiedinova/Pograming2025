@@ -18,8 +18,8 @@ pipeline {
       stage('Test'){
          agent any
          steps{
-            sh 'pip install unittest-xml-reporting'
-            sh 'python3 test.py'
+            bat 'pip install unittest-xml-reporting'
+            bat 'python3 test.py'
          }
          post{
             always {
